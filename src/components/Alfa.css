@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+.conatiner {
+  background-color: #f9f9f9;
+  color: #3D3D3F;
+  padding: 70px 50px;
+}
+.head_txt {
+  text-align: center;
+}
+.alfa_title {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+input {
+  margin-bottom: 35px;
+  height: 4px;
+}
+.alfa_text { 
+  margin: auto;
+  width: 100%;
+  max-width: 530px;
+  font-size: 18px;
+  opacity: 70%;
+}
+.card_container {
+  margin-top: 80px;
+  display: grid;
+  justify-content: space-around;
+  text-align: center;
+  grid-template-columns: repeat(4, 270px);
+}
+.card_block {
+  border: 1px solid #ececec;
+  padding: 10px 10px 30px 10px;
+  border-radius: 15px;
+  background-color: #fff;
+  transition: .3s;
+}
+.card_block:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.150);
+  transform: scale(1.05, 1.05);
+}
+.card_img {
+  border-radius: 10px;
+  max-width: 240px;
+  height: 250px;
+}
+.card_title {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.card_text {
+  margin-top: -6px;
+  color: #999999;
+  font-size: 14px;
+}
+.social_block {
+  margin-top: 20px;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+}
+.social_img {
+  width: 35px;
+  cursor: pointer;
+  transition: .5s;
+}
+.social_img:hover {
+  transform: rotate(10deg);
+}
+.end_button {
+  display: block;
+  margin: auto;
+  margin-top: 70px;
+  background-color: #40A3F8;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 10px 15px;
+  transition: .4s;
+}
+.end_button:hover {
+  background-color: #2f7dc2;
+  padding: 10px 25px;
+  transform: scale(1.05, 1.05);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+}
+
+@media screen and (max-width: 1220px) {
+  .card_container {
+    gap: 20px;
+    grid-template-columns: repeat(2, 270px);
+  }
+}
+@media screen and (max-width: 670px) {
+  .card_container {
+    grid-template-columns: repeat(1, 270px);
+  }
+  .alfa_title {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  input {
+    margin-bottom: 30px;
+    height: 3px;
+  }
+  .alfa_text { 
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .conatiner {
+    padding: 40px 20px;
+  }
+  .card_container {
+    grid-template-columns: repeat(1, 270px);
+  }
+  .alfa_title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .alfa_text { 
+    font-size: 15px;
+  }
+}
